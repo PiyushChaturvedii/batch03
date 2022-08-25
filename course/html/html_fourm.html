@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourm</title>
+</head>
+<body>
+    <form action="" method="">
+        <fieldset>
+            <legend>Enter your Personal Detail</legend>
+        <label>Name</label> <input type="text" name="fname" placeholder="Enter your name here"> <br><br>
+        <label>Password</label> <input type="password" name=""> <br><br>
+        <label>Gender</label> <input type="radio" name="gender" id="male"><label for="male">Male</label> 
+        <input type="radio" name="gender" id="female"><label for="female">Female</label> <br/><br/>
+        <label>Hobbies</label> <input type="checkbox" name="hobby" id="bookreading"><label for="bookreading">Book Reading</label> 
+        <input type="checkbox" name="hobby" id="music"><label for="music">Music</label> <br/><br/>
+        <label>
+Message
+        </label> <textarea row="10" cols="50">Click here for your message</textarea><br/><br/>
+
+        <label>Country</label> <select name="" size="3" multiple>
+            <option value="in">India</option>
+            <option value="ne">Nepal</option>
+            <option value="cn" selected>China</option>
+        </select>
+        
+        <label>Cars</label><select>
+            <optgroup label="Toyota">
+                <option>Innova</option>
+                <option>Etios</option>
+                <option>Fortuner</option>
+            </optgroup>
+            <optgroup label="Renault">
+                <option>Kwid</option>
+                <option>Duster</option>
+                <option>kiger</option>
+                <option>kiger</option>
+                <option>Captur</option>
+            </optgroup>
+        </select>
+        <br/><br/>
+        <label>Cars</label> <input list="cars">
+        <datalist id="cars">
+            <option value="Innova">
+            <option value="Kwid">
+            <option value="Etios">
+            <option value="Swift">
+            <option value="Duster">
+        </datalist>
+    <br/><br/>
+    <label>Upload File</label> <input type="file" accept="" name="document/*" />\
+
+    <input type="submit" value="save" />
+    <input type="reset" />
+    <input type="image" src="image/logo.jpg" width="70px" alt="Submit button"/>
+</fieldset>
+    </form>
+
+</body>
+</html>

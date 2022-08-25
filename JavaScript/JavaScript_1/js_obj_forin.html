@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS:Object for/in</title>
+</head>
+<body>
+    <script>
+        var obj = {
+                    firstName : "Ram",
+                    lastName: "Sharma",
+                    age:20,
+                    city: "Jaipur",
+                    contry: "India"
+                }
+
+
+        for(var key in obj){
+            document.write(key+" : "+obj[key] + "<br>");
+        }
+
+    </script>
+</body>
+</html>

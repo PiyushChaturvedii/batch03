@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: MultiArray</title>
+</head>
+<body>
+    <script>
+        var ary = [
+                    ["Ram",18,"Male","B.com","RAJ"],
+                    ["Shyam",20,"Male","BCA", "UP"],
+                    ["Sita",25,"Female","BCA"],
+                    ["Geeta",25,"Female","BA"],
+                    ["Ram",18,"Male","B.com"],
+                    ["Shyam",20,"Male","BCA"],
+                    ["Sita",25,"Female","BCA"],
+                    ["Geeta",25,"Female","BA"],
+                    ["Ram",18,"Male","B.com"],
+                    ["Shyam",20,"Male","BCA"],
+                    ["Sita",25,"Female","BCA"],
+                    ["Geeta",25,"Female","BA"]
+                ]
+       
+document.write("Length of Array: "+ ary.length);                
+        document.write("<table border='1px' cellspacing='0'>");
+            for(var a = 0 ; a<ary.length ; a++){
+                document.write("<tr>");
+                    for(var b=0; b<ary[a].length; b++){
+                        document.write("<td>"+ary[a][b]+"</td>");
+                    }
+                document.write("</tr>");
+                }
+        document.write("</table>");
+
+
+
+            
+
+       
+    </script>
+</body>
+</html>

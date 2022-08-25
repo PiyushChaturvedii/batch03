@@ -1,0 +1,80 @@
+<!-- Properties
+grid-row-start
+grid-row-end
+grid-row
+gird-column-start
+gird-column-end
+grid-column
+grid-area
+spanning grid items 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Grid Poistion Item</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background:rgb(256,256,256);
+            width: 700px;
+            margin: 50px 0 0 50px;
+           
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows: repeat(4,150px);
+            grid-gap: 20px;
+            
+        }
+    .header{
+            background: orangered;
+            grid-row: 2/3;
+            grid-column: 3/4;
+            z-index:1;
+            
+        }
+    .item2{
+            background: rgb(96, 23, 212);
+        }
+    .ankit{
+            background: rgb(226, 35, 70);
+            
+
+        }
+    .kashish{
+            background: rgb(114, 232, 51);
+            grid-column: 2/4;
+            grid-row: 2/3;
+            
+        }
+    .item5{
+            background: rgb(6, 103, 101);
+            
+        }
+    .item6{
+            background: rgb(24, 233, 201);
+            grid-row: 1/span 4;
+            grid-column: 1 / span 1;
+        }
+        .items{
+            color:white; font-size: 20px; font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS: Grid Positioning Items</h1>  <div class="container">
+        <div class="items header">First </div>
+        <div class="items item2">Second</div>
+        <div class="items ankit">Ankit</div>
+        <div class="items kashish">Kashish</div>
+        <div class="items item5">Fifth</div>
+        <div class="items item6">Sixth</div>
+    </div>
+
+</body>
+</html>

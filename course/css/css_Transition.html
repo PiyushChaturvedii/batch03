@@ -1,0 +1,59 @@
+<!-- Properties
+transition
+transition-property
+transition-duration
+transition-delay
+transition-timing-function value
+ease            slow start, then fast, end slow
+linear          same speed from start to end
+ease-in         start slow
+ease-out        slow end
+ease-in-out     slow start and end
+step4
+cubic-bezier    lets you define your own values
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        #box{
+            width:150px;
+            height:150px;
+            background: red;   
+            /* transition-property: width, height, background;
+            transition-duration: 2s, 4s, 3s; */
+            /* transition: width, height, background 2s, 2s, 3s; */
+            transition: all 2s linear;
+            /* transition-timing-function: cubic-bezier(.07,.84,.83,.67); */
+        margin:60px;
+        }
+        #box:hover{
+            background: green;
+            width: 300px;
+            height:300px;
+        }
+        input{
+            width: 150px;
+            transition: width 2s;
+        }
+        input:focus{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1> CSS Transition </h1>
+    <div id="box">
+    </div>
+    <form>
+        <input type="text"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,166 @@
+body {
+    padding: 10px 0 0 50px;
+}
+
+h1 {
+    font-family: arial;
+}
+
+#menu {
+    margin-top: 15px;
+}
+
+#menu>ul {
+    background: #2c3e50;
+}
+
+#menu ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 32px;
+    padding: 0 15px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#menu ul li {
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0
+}
+
+#menu ul li.active {
+    background: #27ae60
+}
+
+#menu ul li:hover {
+    /*background:#f6f6f6*/
+    background: #2ecc71;
+}
+
+#menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #27ae60;
+    padding: 0
+}
+
+#menu ul ul li {
+    float: none;
+    width: 200px;
+    border-left: 3px solid #27ae60;
+}
+
+#menu ul ul li:hover {
+    border-left: 3px solid #2c3e50;
+}
+
+#menu ul ul a {
+    line-height: 120%;
+    padding: 10px 15px
+}
+
+#menu ul ul ul {
+    top: -4px;
+    left: 100%
+}
+
+#menu ul li:hover>ul {
+    display: block
+}
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font: 16px/1 'Open Sans', sans-serif;
+    background: #e5e5e5;
+}
+
+body {
+    padding: 30px 50px;
+}
+
+h1 {
+    margin: 0 0 30px;
+}
+
+.accordion {
+    width: 50%;
+    background: #fff;
+}
+
+.accordion-tab>.accordion-toggle {
+    position: absolute;
+    display: none;
+}
+
+.accordion-tab>label {
+    color: #fff;
+    background: #2980b9;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    position: relative;
+    display: block;
+    padding: 13px 40px 13px 20px;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.accordion-tab>.accordion-content {
+    max-height: 0;
+    transition: all .40s;
+    overflow: hidden;
+}
+
+.accordion-tab>label:after {
+    content: '\f078';
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    font-family: fontawesome;
+    transform: rotate(90deg);
+    transition: transform .30s;
+}
+
+.accordion-tab>.accordion-toggle:checked~label:after {
+    transform: rotate(0deg);
+}
+
+.accordion-tab>.accordion-toggle:checked~.accordion-content {
+    max-height: 100vh;
+}
+
+.accordion-tab>.accordion-content p {
+    margin: 15px 0;
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}

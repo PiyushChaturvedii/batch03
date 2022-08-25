@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: filter()</title>
+</head>
+<body>
+<script>
+   var ages = [10,18,22,19,20,21];
+    document.write(ages + "<br><br>");
+
+    var b = ages.filter(checkAdult);
+    document.write(b);
+
+function checkAdult(a) {
+    return a >= 18;
+}
+</script>
+
+</body>
+</html>

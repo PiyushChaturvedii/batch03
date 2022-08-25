@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: Function with return value</title>
+</head>
+<body>
+<script>
+//     function fullname(fname="Mohan", lname="Sharma")
+//     {
+//         var a = fname + " " + lname;
+//         return a;
+//     } 
+
+// var fn = fullname("Ram","Singh");
+// document.write(fn);
+var math = parseInt(prompt("Enter your math Subject: "))
+var eng = parseInt(prompt("Enter your English subject: "));
+ var sc = parseInt(prompt("Enter your Science subject: "));
+
+function sum(math,eng,sc) {
+    var s = math + eng + sc;
+    return s;
+}
+
+function percentage(tt) {
+    var per = tt/300 * 100;
+    document.write("WoW! Your percentage is "+ parseInt(per));
+}
+
+var total = sum(math,eng,sc);
+
+percentage(total);
+
+</script>    
+</body>
+</html>

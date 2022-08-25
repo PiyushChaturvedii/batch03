@@ -1,0 +1,48 @@
+<!-- List Style Properties
+List-style-image
+List-style-position
+List-style-type
+List-style
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Style</title>
+    <style>
+        ul{
+        /* list-style-type: circle;
+        list-style-position:inside;
+        list-style-image: url(image/arrow48.png); */
+        
+        list-style: none inside url(image/arrow48.png);
+        border: 2px solid red;
+        }
+        ul li{
+            padding: 0 3px;
+        }
+
+        ol{
+            list-style-type:upper-alpha;
+            list-style-position: inside;
+        }
+    </style>
+ </head>
+ <body>
+    <h1>CSS List Style</h1>
+    <ul>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Apple</li>
+    </ul>
+    <ol>
+        <li>Orange</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Apple</li>
+    </ol>
+ </body>
+ </html>

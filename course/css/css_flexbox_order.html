@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS:Flexbox_Order</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            padding:10px;
+            background-color: blanchedalmond;
+            border: 3px solid black;
+            height: 150px;
+            margin: 10px;
+            
+            display: flex;
+
+        }
+
+        .item1{background-color: aquamarine;order: 1;}
+        .item2{background-color:purple;}
+        .item3{background-color: yellowgreen; order: -2;}
+        .item4{background-color: pink;order: -1;}
+        .item5{background-color:skyblue;order:2}
+    </style>
+</head>
+<body>
+    <h1>Flexbox Order</h1>
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+        <div class="items item5">Five</div>
+    </div>
+</body>
+</html>

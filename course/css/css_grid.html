@@ -1,0 +1,90 @@
+<!-- Grid
+Two dimensional grid system
+CSS Grid layout replaces float layout
+Fast & Clean Code
+No need of CSS frameworks
+Gird Properties:
+grid-template-rows
+grid-template-columns
+grid-template-areas
+grid-template
+gird-row-gap
+gird-column-gap
+gird-gap
+justify-items
+align-items
+justify-content
+align-content
+grid-auto-rows
+grid-auto-columns
+grid-auto-flow
+grid-row-start
+grid-row-end
+grid-row
+grid-column-start
+grid-column-end
+grid-column
+grid-area
+grid-area
+justify-self
+align-self
+order
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS: Creating Grid</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background:rgb(198, 197, 197);
+            width: 700px;
+            height: 800px;
+            margin: 70px 0 0 50px;
+
+            display: grid;
+            grid-template-columns: 50% repeat(2, 150px);
+            grid-template-rows: 1fr 200px;
+
+            grid-gap:20px;
+        }
+    .item1{
+            background: orangered;
+        }
+    .item2{
+            background: rgb(96, 23, 212);
+        }
+    .item3{
+            background: rgb(226, 35, 70);
+        }
+    .item4{
+            background: rgb(114, 232, 51);
+        }
+    .item5{
+            background: rgb(6, 103, 101);
+        }
+    .item6{
+            background: rgb(99, 115, 7);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS: Creating Grid</h1>
+
+    <div class="container">
+        <div class="items item1">First</div>
+        <div class="items item2">Second</div>
+        <div class="items item3">Third</div>
+        <div class="items item4">Fourth</div>
+        <div class="items item5">Fifth</div>
+        <div class="items item6">Sixth</div>
+    </div>
+
+</body>
+</html>

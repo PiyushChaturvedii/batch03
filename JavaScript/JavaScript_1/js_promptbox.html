@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: Alert Box</title>
+</head>
+<body>
+    <script>
+     var per = prompt("Enter your percentage : ");
+
+    if(per >= 80 && per <= 100){
+        document.write("Your are in Merit.")
+    }else if(per >= 60 && per <= 79){
+        document.write("Your are in Ist Division.")
+    }else if(per >= 45 && per <= 59){
+        document.write("Your are in IInd Division.")
+    }else if(per >= 33 && per <= 44){
+        document.write("Your are in IIIrd Division.")
+    }else if(per < 33){
+        document.write("Your are Fail.")
+    }else{
+        document.write("Please Enter Valid percentage.")
+    }
+
+       </script>
+</body>
+</html>

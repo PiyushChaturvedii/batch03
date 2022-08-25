@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS:Flexbox</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        h1{padding: 0 0 0 50px;}
+
+        .container{
+            background: rgba(191, 188, 188, 0.938);
+            margin: 50px;
+            padding: 0px;
+            border: 3px solid black;    
+            
+            display:flex;
+            flex-direction: column;        
+        }
+
+        .items{
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                padding: 0px;
+                height: 100px;
+        }
+
+        .item1{background: red;}
+        .item3{background: rgb(7, 57, 173);}
+        
+        .item2{
+            background: rgb(85, 138, 7);
+            display: flex;
+        }
+        .item2 .subitem{
+            background-color: wheat;
+            color:purple;
+            margin:5px;
+            flex-grow: 1;
+        }
+        
+        
+       
+       
+    </style>
+</head>
+<body>
+    <h1> CSS Flexbox</h1>
+    <div class="container">
+        <div class="items item1">One - Header</div>
+        
+        <div class="items item2">
+        <div class="subitem subitem1">A</div>
+        <div class="subitem subitem2">B</div>
+        <div class="subitem subitem3">C</div>    
+        </div>
+        
+        <div class="items item3">Three - Footer</div>
+        
+       
+    </div>
+</body>
+</html>

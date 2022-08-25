@@ -1,0 +1,96 @@
+<!-- CSS Flexbox:
+New module in CSS3 to easy align elements in different directions and orders.
+Flexbox is to gives container the ability to expand and shrink elements to best use all the available space.
+CSS Flexbox layout replaces float layout
+New way to build one-dimensional layout.
+
+flex-direction
+flex-wrap
+flex-flow
+flex-grow
+flex-shrink
+flex-basis
+flex
+justify-content
+align-content
+align-items
+align-self
+order
+
+-->
+
+<!-- Flex directions
+row
+row-reverse
+column
+column-reverse
+-->
+
+<!-- flex-wrap
+nowrap
+wrap
+wrap-reverse -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS:Flexbox</title>
+    <style>
+        body{font-family: Arial, Helvetica, sans-serif;}
+        h1{padding: 0 0 0 50px;}
+
+        .container{
+            background: rgb(91, 88, 88);
+            width: 800px;
+            margin: 50px;
+            padding: 10px;
+            border: 3px solid black;
+            height: 400px;
+        
+
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            align-items: baseline;
+            /* flex-flow: row wrap;*/
+            justify-content: center; 
+        
+
+        }
+
+        .item1{background: red;}
+        .item2{background: rgb(85, 138, 7);
+            height:100px;
+            font-size:40px;}
+        .item3{background: rgb(7, 57, 173);}
+        .item4{background: rgb(180, 19, 129);}
+        .item5{background: red;}
+        .item6{background: rgb(85, 138, 7);}
+        .item7{background: rgb(7, 57, 173);}
+        .item8{background: rgb(180, 19, 129);}
+        .items{
+            color: white;
+            /* font-size: 20px; */
+            font-weight: bolder;
+            text-align: center;
+            padding: 10px;
+            margin: 5px}            
+    </style>
+</head>
+<body>
+    <h1> CSS Flexbox</h1>
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+        <div class="items item5">Five</div>
+        <div class="items item6">Six</div>
+        <div class="items item7">Seven</div>
+        <div class="items item8">Eight</div>
+    </div>
+</body>
+</html>
