@@ -1,11 +1,7 @@
-.red{
-    background-color: red;
-    border: 10px dotted black;
-}
+/* .green{
+    background: green;
+} */
 
-.green{
-    background-color: green;
-}
 
 * {
     box-sizing: border-box;

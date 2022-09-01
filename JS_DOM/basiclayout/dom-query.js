@@ -1,8 +1,8 @@
 var element;
 
-// var e = document.querySelector("#header").innerHTML = "<h1>Jai Shree Ram</h1>"
+// document.querySelector(".list").innerHTML
 
-e = document.querySelectorAll("#header h1")[1].innerHTML;
+var a = document.querySelectorAll("#footer h3")[0].innerHTML = "Aeeron Academy";
 
-console.log(e);
-console.log(typeof(e));
+
+console.log(a);

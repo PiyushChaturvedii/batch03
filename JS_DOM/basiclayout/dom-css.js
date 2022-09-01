@@ -1,15 +1,20 @@
-var element;
+var boorder;
+// document.querySelector("#footer").className = "abc xyz efg";
+// document.querySelector("#footer").classList.add("xyz");
 
-// document.querySelector("#header").className = "green red";
-// document.querySelector("#header").style.backgroundColor = "black"
-
-// document.querySelector("#header").classList.add();
-
-// element = document.querySelector("#header").style.color = "white";
-
-document.querySelector("#header").classList.remove("xyz","green","red");
+// document.querySelector("#footer").style.backgroundColor = "red";
 
 
-element = document.querySelector("#header").classList;
-console.log(element);
-console.log(typeof(element));
+
+document.querySelector("#footer").classList.remove("xyz");
+document.querySelector("#footer").classList.remove("efg");
+document.querySelector("#footer").classList.remove("abc");
+
+
+
+boorder = document.querySelector("#footer").style.border;
+coolor = document.querySelector("#footer").style.color;
+classs = document.querySelector('#footer').classList;
+console.log(classs);
+console.log(coolor);
+console.log(boorder);
