@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADJS: REST</title>
+</head>
+<body>
+    <script>
+        function sum(name,course, ...args) {
+            console.log(arguments);
+
+            document.write(`Hello ${name} of ${course} : `);
+
+            let sum = 0;
+            for(let i in args){
+                // console.log(i);
+                sum += args[i];
+            }
+
+            document.write(sum + "<br>");
+        }
+
+        arr = [20,30,40,50]
+        // sum("Ram","BA",20,30,40,50,60,70,80);
+        sum("Mohan","MA", arr);
+    </script>
+</body>
+</html>

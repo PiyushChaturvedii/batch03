@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADJS: REST</title>
+</head>
+<body>
+    <script>
+        // function sum(name,course, ...args) {
+        //     console.log(arguments);
+
+        //     document.write(`Hello ${name} of ${course} : `);
+
+        //     let sum = 0;
+        //     for(let i in args){
+        //         // console.log(i);
+        //         sum += args[i];
+        //     }
+
+        //     document.write(sum + "<br>");
+        // }
+
+        // arr = [20,30,40,50]
+        // // sum("Ram","BA",20,30,40,50,60,70,80);
+        // sum("Mohan","MA", ...arr);
+
+        // var arr = [10,20,30,40];
+        // console.log([...arr]);
+
+
+        // var arr1 = [10,20,30,40,50,60];
+        // var arr3 = arr1
+        // var arr2 = [...arr1];
+        // arr1.push(70);
+        // arr1.push(70);
+        // arr1.push(70);
+        // arr1.push(70);
+        // arr1.push(70);
+        // arr1.push(70);
+
+        // console.log(arr3);
+
+        // let arr1 = [10,20,30];
+        // let arr2 = [50,60];
+
+        // 5,70
+
+        // let arr3 = arr1.concat(arr2);
+        // let arr3 = [5,...arr1,40,...arr2,70];
+
+        // document.write(arr3);
+        // console.log(arr3);
+
+        var obj1 = {
+            name : "Ram",
+            course : "BA"
+        };
+        var obj2 = {
+            age : 25
+        };
+
+        var obj3 = {...obj1, ...obj2};
+
+        console.log(obj3);
+
+    </script>
+</body>
+</html>
