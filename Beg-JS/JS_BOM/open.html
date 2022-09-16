@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: BOM Open</title>
+</head>
+<body>
+
+    <button onclick="openWindow()">Open Window</button><br>
+    <button onclick="moveWindow()">Move Window</button><br>
+    <button onclick="moveByWindow()">Move by Window</button><br>
+    <button onclick="closeWindow()">Close Window</button><br>
+    <button onclick="resizeWindow()">Resize Window</button><br>
+    <button onclick="resizeByWindow()">Resize by Window</button><br>
+    
+
+    <script>
+
+var myWindow;
+
+    function openWindow() {
+        myWindow = window.open("",'',"width=200px,height=200px");
+        myWindow.document.write("<p>Id minim occaecat exercitation minim proident ex laboris consectetur ullamco nisi occaecat.Dolore consectetur qui sunt et. Culpa aute proident et commodo eu esse anim mollit eu ut. Cillum in mollit incididunt cillum ut sint tempor adipisicing in. Eiusmod voluptate non nisi ipsum non et cupidatat ipsum ea fugiat sint dolor commodo mollit Dolore sit reprehenderit nisi sint reprehenderit incididunt aliquip incididunt pariatur ullamco ipsum cillum est. Deserunt velit dolore qui consectetur Lorem deserunt veniam tempor officia culpa. Veniam consectetur magna esse sint ea dolor nulla eu. Sunt ex aute reprehenderit laborum. Exercitation ullamco irure sint anim sint culpa enim eiusmod reprehenderit do. t quis dolor tempor irure. Qui voluptate in id sint excepteur labore ea deserunt. Amet est cillum laborum minim dolore. Mollit voluptate commodo sint enim ea. Qui id pariatur in in eiusmod id nisi sunt velit dolor. Labore ut laboris velit dolor exercitation. Deserunt irure eiusmod pariatur est ut exercitation.t eiusmod Lorem nostrud enim dolore duis veniam nisi aliquip tempor duis. Commodo officia consequat esse et ut velit pariatur. Quis culpa Lorem aute nisi. Non nisi laboris velit et in consectetur laborum et ad fugiat est officia do Lorem.nim magna duis sit ullamco qui amet sunt consectetur aute aliqua ut aliqua. Qui amet consequat pariatur eiusmod ullamco irure. Nisi pariatur fugiat pariatur mollit sint consectetur cillum veniam commodo sint non reprehenderit aute dolore. Adipisicing eiusmod nisi non enim veniam est nisi irure in. </p>")
+        }
+    function closeWindow() {
+            myWindow.close();
+        }
+    function moveWindow() {
+        myWindow.moveTo(100,100);
+        myWindow.focus();
+    }
+    function moveByWindow() {
+        myWindow.moveBy(10,10);
+        myWindow.focus();
+    }
+    function resizeWindow() {
+        myWindow.resizeTo(400,400);
+    }
+    function resizeByWindow() {
+        myWindow.resizeBy(10,10);
+    }
+    </script>
+</body>
+</html>

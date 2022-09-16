@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS: Scroll</title>
+</head>
+<body>
+    <h1>JS: ScrollTo & scrollBy</h1>
+
+    <button onclick="scrollWindow()">Scroll Window</button>
+    
+    <p style="width:1000px;border: 1px solid red;">
+        Esse enim magna consectetur consequat labore ipsum dolor ea nulla. Tempor esse ex aliquip et eiusmod. Ex officia enim laboris nisi esse occaecat eu qui nisi deserunt do fugiat occaecat. Veniam fugiat anim voluptate adipisicing culpa incididunt voluptate eiusmod esse id cillum. Deserunt adipisicing cupidatat nostrud ad. Voluptate anim incididunt officia tempor proident irure.Ex officia do culpa ut nostrud veniam magna ad consequat do amet laborum laboris. Duis pariatur dolor sit amet commodo magna. Dolor sit incididunt laboris est aliquip cupidatat eiusmod. Est ullamco quis Lorem occaecat cillum do cillum eu amet sunt reprehenderit.
+
+Elit sint commodo cupidatat laborum occaecat adipisicing ullamco sit in irure. Exercitation veniam adipisicing fugiat sit non in consectetur. Laborum quis commodo ad dolore in minim duis consectetur nisi incididunt consectetur amet.
+
+Ad aliqua cillum magna veniam aliquip irure pariatur laboris duis. Sunt pariatur veniam id nostrud. Aute magna cillum eu est dolor. Lorem do ea consectetur aliquip officia Lorem consectetur dolore consectetur. Officia officia ex non ad.
+
+Veniam ea adipisicing consectetur aliqua labore voluptate deserunt laborum duis commodo. Quis enim amet enim cupidatat velit excepteur reprehenderit laborum reprehenderit consectetur elit eiusmod labore. Tempor veniam elit adipisicing commodo eu minim dolore ut labore anim exercitation consequat.
+
+Dolor excepteur dolore Lorem minim consectetur aliquip mollit pariatur cupidatat eiusmod ipsum do. Incididunt do Lorem reprehenderit duis nostrud eiusmod anim irure ut quis. Deserunt proident labore in cillum commodo magna esse deserunt qui in officia adipisicing enim irure. Mollit minim do commodo magna et elit sit excepteur officia est. Ex nostrud minim excepteur culpa labore duis quis non tempor veniam elit culpa. Sint commodo ipsum ullamco et. Minim esse cupidatat nisi id anim dolore et enim.
+    </p>
+
+        <button onclick="scrollUpWindow()" style="position: fixed;left:50px;bottom: 50px;">Scroll Window</button>
+        <button onclick="scrollrightWindow()" style="position: fixed;left:200px;bottom: 50px;">Scroll Window</button>
+        <button onclick="scrollhomeWindow()" style="position: fixed;left:200px;bottom: 100px;background-color: red;">Scroll Window</button>
+    <script>
+        function scrollWindow() {
+            window.scrollBy(0,0);
+        }
+        function scrollUpWindow() {
+            window.scrollBy(100,0);
+        }
+        function scrollrightWindow() {
+            window.scrollBy(-100,0);
+        }
+        function scrollhomeWindow() {
+            window.scrollTo(50,0);
+        }
+    </script>
+</body>
+</html>

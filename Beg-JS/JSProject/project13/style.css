@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    position: relative;
+    background-color: rgb(103, 58, 238);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5px;
+    background: rgba(173, 238, 213, 0.908);
+    border: 1px solid lightgray;
+}
+
+button:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#modal{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* display: none; */
+}
+
+#inner_modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#inner_modal textarea{
+    width: 300px;
+    height: 300px;
+    padding: 25px;
+    outline: none;
+    resize: none;
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0px 2px 4px 0px;
+}
+
+#inner_modal i{
+    font-size: 1.4rem;
+    color: grey;
+    cursor: pointer;
+    margin-top: -295px;
+    margin-left: -35px;
+    transition: 1s ease-in-out;
+}
+
+#inner_modal i:hover{
+    color: red;
+}
+
+.container{
+    width: 1280px;
+    margin: auto;
+}
+
+#header{
+    color: white;
+    padding: 0 20px;
+    min-height: 70px;
+    text-shadow: 1px 1px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fas{
+    color: #4ffcb4;;
+}
+.far{
+    color: #4ffcb4;;
+}
+
+#all_notes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.note{
+    width: 300px;
+    height: 300px;
+    transition: 2s;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.75);
+}
+
+.note h1{
+    font-size: 1.5rem;
+}
+
+.details{
+    margin-top: 25px;
+    padding: 0 15px;
+    font-size: 1rem;
+}
+
+.details i{
+    color: whitesmoke;
+    cursor: pointer;
+    text-shadow: 1px 1px #BBB;
+    
+
+}
+
