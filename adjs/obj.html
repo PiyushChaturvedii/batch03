@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjs:Object</title>
+</head>
+<body>
+    
+<script>
+    // let name = "Ram Sharma";
+    // let city = "Agra";
+
+
+    // var obj = {
+    //     name,city
+    // };
+
+    // console.log(typeof(obj));
+    // console.log(obj.name);
+    // console.log(obj.city);
+
+    //     let n = "student";
+
+    //     var obj = {
+    //         [n+"name"]: "Ram Sharma",
+    //         course: "BA",
+    //    'user detail show'(){
+    //             return `${this.studentname} 
+    //             is student of ${this.course}`
+    //         }
+    //     };
+
+    //     console.log(obj.studentname);
+    //     console.log(obj['user detail show']());
+    //     document.write(obj['user detail show']());
+
+    // let name1 = "ram sharma";
+    // let course = "BA";
+
+    // function student(name,x) {
+       
+    //     return {name,x};
+    // }
+
+    // console.log(student(name1,course));
+    // console.log(typeof(student(name1)));
+
+        let fname = "Ram";
+        let lname = "Sharma";
+        let course = "BA";
+        let age = 26;
+
+        function student(f,l,c,a) {
+            let fullname = f +" "+ l;
+            return{fullname,c,a}
+        }
+
+    
+let a = (student(fname,lname,course,age));
+console.log(a.fullname);
+
+</script>
+
+</body>
+</html>
