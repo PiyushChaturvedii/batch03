@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <title>ADJS: OOP</title>
+
+    <script>
+        // class hello{
+        //     message(){
+        //         console.log("Hello");
+        //     }
+        //     hi(){
+        //         console.log("Hi");
+        //     }
+        // }
+
+        // let a = new hello();
+        // let b = new hello();
+        // a.message();
+        // a.hi();
+        // b.message();
+        // b.hi();
+
+    // class student{
+    //     constructor(){
+    //         console.log("construtor function");
+    //     }
+    // }
+
+    // let a = new student();
+    // let b = new student();
+
+
+    class student{
+        constructor(name,age){
+            this.studentname = name;
+            this.studentage = age;
+            console.log("constructor function");
+        }
+        hello(){
+            // console.log(`Hello ${this.studentname}. Your age is ${this.studentage}`);
+            document.write(`Hello ${this.studentname}. Your age is ${this.studentage}`);
+        }
+
+        static staticMethod(){
+            console.log('static function');
+        }
+    }
+
+    let a = new student("Ram Sharma",26);
+    let b = new student("Shyam Sharma",25);
+    // a.name = "Ram Sharma";
+    a.hello();
+    b.hello();
+    // a.staticMethod();
+    student.staticMethod();
+
+    </script>
+</body>
+</html>

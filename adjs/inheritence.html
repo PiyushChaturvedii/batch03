@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjs:Inheritance</title>
+</head>
+<body>
+    
+<script>
+    // class employee{
+    //     constructor(name){
+    //         this.empname= name;
+    //         console.log("Constructor: Process Complete ");
+    //     }
+        
+    //     raju(){
+    //         console.log("Employee Name : "+ this.empname);
+    //     }
+    // }
+    
+    // class manager extends employee{
+    //     raju(){
+    //         console.log("Manager Name : "+ this.empname);
+    //         super.raju();
+    //     }
+        
+    //     }
+    
+    // var a = new manager("Ankit");
+
+    // a.raju();
+    
+class employee{
+    constructor(name, age, salary){
+        this.empname = name;
+        this.empage = age;
+        this.empsalary = salary;
+        console.log("Constructor Process completed...");
+    }
+
+    show(){
+        document.write(`<h1>Employee Class</h1><br>Name : ${this.empname}<br>
+        <br>Age : ${this.empage}<br>
+        <br>Salary : ${this.empsalary}<br>`);
+    }
+}
+
+
+class manager extends employee{
+    info(){
+        let ta = 1000;
+        let da = 2000;
+        let totalsalary = this.empsalary + ta + da
+        console.log("Manager Name: " + this.empname);
+        document.write(`<h1>Employee Class</h1><br>Name : ${this.empname}<br>
+        <br>Age : ${this.empage}<br>
+        <br>Salary : ${totalsalary}<br>`);
+    }
+}
+
+
+class hr extends manager{
+
+}
+
+
+let a = new hr("Ram",23,90000);
+
+a.info();
+
+// let b = new manager("Ashish",23,90000);
+// b.info();
+
+
+
+</script>
+
+</body>
+</html>
