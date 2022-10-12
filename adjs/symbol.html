@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADJS:Symbol</title>
+</head>
+<body>
+    <script>
+        // let id1 = Symbol("Hello");
+        // let id2 = Symbol("Hello");
+        // id2 = Symbol("Ram");
+        // console.log(id2.description);
+        // alert(id1.description)
+        // document.write(id1.description)
+        // console.log(id1 === id2);
+        // console.log (typeof(id1));
+
+        // const str1 = "Hello";
+        // const str2 = "Hello";
+        // console.log(str1 == str2);
+        let age = Symbol();
+        let gender = Symbol();
+        
+        let user = {
+            name: "Ram",
+            class : 10,
+            adult: "false",
+            [age]: 25,
+            ["gender"]: "Male",
+            address: {
+                city: "Agra",
+                state: "uttar pradesh"
+            }
+        };
+// user[age] = 25;
+for(let key in user){
+    console.log(key);
+}
+        
+        console.log(user);
+        
+        console.log(JSON.stringify(user));
+        
+    </script>
+</body>
+</html>

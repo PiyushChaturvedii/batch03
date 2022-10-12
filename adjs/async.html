@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADJS: Async</title>
+</head>
+<body>
+    <script>
+        // let test = async() =>'Hello';
+
+        // async function test() {
+        //     console.log("2: Message");
+        //     const responses = await fetch("student.json")
+        //     await console.log("3: Message");
+        //     const students = await responses.json();
+            
+        //     return students;
+        // }
+
+
+        
+
+        // console.log("1: Message");
+        // let a = test();
+        // console.log("4: Message");
+        // console.log(a);
+    
+        async function test() {
+            try{
+                const response = await fetch("student.json");
+                const student = await response.json();
+                return student
+            }catch(error){
+                console.log(error);
+            }
+        }
+        // let a = test();
+        // console.log(a);
+
+
+        test().then((res)=>{
+            console.log(res);
+        })
+           </script>
+</body>
+</html>
+
+
