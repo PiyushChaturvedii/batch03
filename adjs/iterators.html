@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterators</title>
+</head>
+<body>
+    <script>
+        
+        // for(let i = 0; i < n.length;i++){
+            //     console.log(n[i]);
+            // }
+            
+            // for(let values of n){
+        //     console.log(values);
+        // }
+        // console.log(typeof n[Symbol.iterator]);
+//         let numbers = "Shree Ram";
+        
+// for(let char of numbers){
+//     console.log(char);
+// }
+
+let numbers = [50,500,300,400,500];
+
+        // let itr = numbers[Symbol.iterator]();
+        
+        // let a = itr.next();
+        // console.log(a.value);
+        // a = itr.next();
+        // console.log(a.done);
+
+        // while(!result.done) {
+        //     console.log(result.value);
+        //     result = itr.next();
+        // }
+                
+       function numberIterator(arr) {
+        var nextNum = 0;
+        return{
+            next(){
+                if(nextNum < arr.length){
+                    return{
+                    value: arr[nextNum++],
+                    done: false
+                }
+                }else{
+                    return{
+                        done: true
+                    }
+                }
+                
+            }
+        }
+       }
+       
+       
+        let x = [10,20,30];
+
+       let y = numberIterator(x);
+       y.next();
+       console.log(y.next());
+       console.log(y.next());
+       console.log(y.next());
+       console.log(y.next());
+       console.log(y.next());
+
+    </script>
+</body>
+</html>
