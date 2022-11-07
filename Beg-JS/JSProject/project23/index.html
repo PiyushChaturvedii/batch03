@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pairing Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <!-- score display -->
+            <div class="board score">
+                <h4>Score</h4>
+                <p class="sc">0</p>
+            </div>
+            <!-- start button -->
+            <div class="mes">Start</div>
+            <!-- board time -->
+            <div class="board time">
+                <h4>Seconds</h4>
+                <p class="second">30</p>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="box"></div>
+        </div>
+    </div>
+
+    <audio data-key="select" src="libs/sounds/bounce.mp3"></audio>
+    <audio data-key="correct" src="libs/sounds/correct.mp3"></audio>
+    <audio data-key="lose" src="libs/sounds/lose.mp3"></audio>
+    <audio data-key="seconds" src="libs/sounds/seconds.mp3"></audio>
+    <audio data-key="wrong" src="libs/sounds/wrong.mp3"></audio>
+    <audio data-key="yay" src="libs/sounds/yay.mp3"></audio>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
