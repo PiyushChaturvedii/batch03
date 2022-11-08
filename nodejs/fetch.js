@@ -34,4 +34,3 @@ fetch('https://api.covid19api.com/summary').then((apidata) => {
     .catch((error) => {
     console.log(error);
 })
-

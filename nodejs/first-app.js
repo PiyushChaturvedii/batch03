@@ -4,4 +4,4 @@
 
 var name = 'Ram Kumar';
 
-console.log(name);
+console.
