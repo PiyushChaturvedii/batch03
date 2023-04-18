@@ -1,0 +1,63 @@
+FullStack
+
+React - Portfolio- Project - Link - github - 6 month
+
+javaScript - project(25)
+MainProject
+Nodejs - (4 project)
+
+*reactjs - (1project)
+
+
+nodejs - CRUD - MongoDb,Mooge,sql, squlize
+
+*.capstone Project - (InterShip) - 3 month
+1. Coaching
+2. school Mangement
+3. library Management
+
+
+
+Resume Building
+
+
+Linked Profile
+Facebook Profile
+Insta Profile
+gitHub Profile
+
+landing  page
+(same)
+phone
+email
+dp
+
+
+23 April -.........
+
+
+05May - Regualr Classes end
+
+Module
+1. Http
+2. Http - Project
+3. Routing
+4. Routing - Project
+5. Forms
+6. Redux - basics
+7. Redux - Project
+8. Advanced - Redux
+9. Advanced Redux - Project
+10. Authentication
+11. Burger- Improvements
+Bonus - Animations
+Burger_CSS
+NextJS
+Redux_Saga
+React Hooks Basic
+React Hooks Advanced
+
+
+
+
+
