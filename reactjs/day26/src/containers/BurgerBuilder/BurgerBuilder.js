@@ -26,22 +26,20 @@ class BurgerBuilder extends Component{
     
     
     state = {
-        ingredients: {
-            salad: 0,
-            bacon: 0,
-            cheese:0,
-            meat:0
-        },
+        ingredients:null,
         totalPrice: 4,
         purchasable: false,
         purchasing: false,
-        loading: false
+        loading: false,
+        error: false
     }
 
     componentDidMount(){
         axios.get('https://myburger-5839d-default-rtdb.asia-southeast1.firebasedatabase.app/ingredients.json')
         .then(response=>{
             this.setState({ingredients: response.data})
+        }).catch(error => {
+            this.setState({error:true})
         })
     }
 
@@ -126,7 +124,8 @@ class BurgerBuilder extends Component{
      
         
         
-        let burger = <Spinner />
+        let burger = this.state.error? <p>Ingredients can't be loaded! </p> :<Spinner />
+        let orderSummary = <Spinner />
         if (this.state.ingredients) {
             
         burger = (
@@ -143,13 +142,12 @@ class BurgerBuilder extends Component{
                 
     </Aux>
 )
-        }
-        let orderSummary = <OrderSummary
+        orderSummary = <OrderSummary
             price={this.state.totalPrice}
             purchaseCancelled={this.purchaseCancelHandler}
             purchaseContinued={this.purchaseContinueHandler}
             ingredients={this.state.ingredients} />
-
+        }
         if (this.state.loading) {
             orderSummary = <Spinner />
         }
